@@ -42,6 +42,6 @@ does not duplicate an observation for the same ISIN and date.
 ## Commits and Pull Requests
 
 Follow the Conventional Commit style used in history, such as
-`feat: collect and publish daily fund NAVs`. Versionary manages releases from
-`main`. In pull requests, describe the affected providers or outputs, list the
-checks you ran, and link any related issue.
+`feat: collect and publish daily fund NAVs`. In pull requests, describe the
+affected providers or outputs, list the checks you ran, and link any related
+issue.
