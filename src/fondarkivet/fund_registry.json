@@ -11,6 +11,50 @@
     "name": "AMF Aktiefond Småbolag",
     "provider": "amf"
   },
+  "SE0002572313": {
+    "name": "AMF Aktiefond Asien Stilla havet",
+    "provider": "amf"
+  },
+  "SE0000739153": {
+    "name": "AMF Aktiefond Europa",
+    "provider": "amf"
+  },
+  "SE0000862278": {
+    "name": "AMF Aktiefond Global",
+    "provider": "amf"
+  },
+  "SE0002042283": {
+    "name": "AMF Aktiefond Nordamerika",
+    "provider": "amf"
+  },
+  "SE0000739195": {
+    "name": "AMF Aktiefond Sverige",
+    "provider": "amf"
+  },
+  "SE0013110798": {
+    "name": "AMF Aktiefond Tillväxtmarknader",
+    "provider": "amf"
+  },
+  "SE0000739161": {
+    "name": "AMF Aktiefond Världen",
+    "provider": "amf"
+  },
+  "SE0000739179": {
+    "name": "AMF Balansfond",
+    "provider": "amf"
+  },
+  "SE0011414606": {
+    "name": "AMF Företagsobligationsfond",
+    "provider": "amf"
+  },
+  "SE0004324424": {
+    "name": "AMF Räntefond Mix",
+    "provider": "amf"
+  },
+  "SE0018067860": {
+    "name": "AMF Strategifond Global",
+    "provider": "amf"
+  },
   "SE0000624421": {
     "name": "Handelsbanken Europa Index Criteria (A1 SEK)",
     "provider": "handelsbanken",
