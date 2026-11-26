@@ -75,6 +75,84 @@ class CollectorCliTest(unittest.TestCase):
                 [(other_isin, "2025-01-03"), (isin, "2025-01-03")],
             )
 
+    def test_publishes_missing_share_class_from_archive(self):
+        isin = "SE0001184961"
+        other_isin = "SE0004297927"
+        source_url = "https://example.org/fund"
+        first_quote = make_quote(
+            isin, "First fund", date(2025, 1, 2), Decimal("101.50"), "SEK", source_url
+        )
+        other_quote = make_quote(
+            other_isin, "Second fund", date(2025, 1, 3), Decimal(202), "SEK", source_url
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            archive = root / "archive"
+            site = root / "fresh-site"
+            with patch(
+                "fondarkivet.cli.fetch_quotes",
+                side_effect=[{isin: first_quote}, {other_isin: other_quote}],
+            ):
+                main([str(archive), str(root / "first-site")])
+                main([str(archive), str(site)])
+
+            nav = site / "v1" / "nav"
+            self.assertEqual(read_csv(nav / f"{isin}.csv"), [first_quote[1]])
+            self.assertEqual(
+                read_csv(nav / "latest.csv"), [first_quote[1], other_quote[1]]
+            )
+            catalog = json.loads(
+                (site / "v1" / "funds.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                catalog[0],
+                {
+                    "isin": isin,
+                    "name": "First fund",
+                    "currency": "SEK",
+                    "latest_date": "2025-01-02",
+                    "source_url": source_url,
+                },
+            )
+
+    def test_publishes_legacy_archive_without_fund_metadata(self):
+        isin = "SE0001184961"
+        source_url = "https://example.org/fund"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            archive = root / "archive"
+            site = root / "site"
+            archive.mkdir()
+            history = archive / f"{isin}.csv"
+            history.write_text(
+                "isin,date,nav,currency,source_url\n"
+                f"{isin},2025-01-03,105.00,SEK,{source_url}\n"
+                f"{isin},2025-01-02,100.00,SEK,{source_url}\n",
+                encoding="utf-8",
+            )
+            with patch("fondarkivet.cli.fetch_quotes", return_value={}):
+                main([str(archive), str(site)])
+
+            nav = site / "v1" / "nav"
+            rows = list(reversed(read_csv(history)))
+            self.assertEqual(read_csv(nav / history.name), rows)
+            self.assertEqual(read_csv(nav / "latest.csv"), [rows[-1]])
+            catalog = json.loads(
+                (site / "v1" / "funds.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                catalog,
+                [
+                    {
+                        "isin": isin,
+                        "name": isin,
+                        "currency": "SEK",
+                        "latest_date": "2025-01-03",
+                        "source_url": source_url,
+                    }
+                ],
+            )
+
     def test_requires_both_directories_before_fetching(self):
         with (
             patch("fondarkivet.cli.fetch_quotes") as fetch,
