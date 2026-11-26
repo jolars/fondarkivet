@@ -890,8 +890,316 @@
     "provider": "spiltan",
     "slug": "spiltan-europafond-investmentbolag"
   },
+  "NO0010817380": {
+    "name": "Delphi Global A2",
+    "provider": "storebrand"
+  },
+  "SE0002800276": {
+    "name": "GodFond Sverige & Världen A SEK",
+    "provider": "storebrand"
+  },
+  "SE0021626553": {
+    "name": "GodFond Sverige & Världen B SEK",
+    "provider": "storebrand"
+  },
+  "NO0010735129": {
+    "name": "SKAGEN Focus A SEK",
+    "provider": "storebrand"
+  },
+  "NO0008004009": {
+    "name": "SKAGEN Global A SEK",
+    "provider": "storebrand"
+  },
+  "NO0010140502": {
+    "name": "SKAGEN Kon-Tiki A SEK",
+    "provider": "storebrand"
+  },
+  "NO0010657356": {
+    "name": "SKAGEN m2 A SEK",
+    "provider": "storebrand"
+  },
+  "NO0008000445": {
+    "name": "SKAGEN Vekst A SEK",
+    "provider": "storebrand"
+  },
+  "SE0001095845": {
+    "name": "SPP Generation 40-tal",
+    "provider": "storebrand"
+  },
+  "SE0001095852": {
+    "name": "SPP Generation 50-tal",
+    "provider": "storebrand"
+  },
+  "SE0001095860": {
+    "name": "SPP Generation 60-tal",
+    "provider": "storebrand"
+  },
+  "SE0001095878": {
+    "name": "SPP Generation 70-tal",
+    "provider": "storebrand"
+  },
+  "SE0000619355": {
+    "name": "SPP Generation 80-tal",
+    "provider": "storebrand"
+  },
+  "SE0003455658": {
+    "name": "Storebrand Emerging Markets A SEK",
+    "provider": "storebrand"
+  },
+  "SE0029502632": {
+    "name": "Storebrand Emerging Markets B SEK",
+    "provider": "storebrand"
+  },
+  "SE0008129969": {
+    "name": "Storebrand Emerging Markets Plus A SEK",
+    "provider": "storebrand"
+  },
+  "SE0008129977": {
+    "name": "Storebrand Emerging Markets Plus B SEK",
+    "provider": "storebrand"
+  },
+  "NO0011030215": {
+    "name": "Storebrand Equal Opportunities A2",
+    "provider": "storebrand"
+  },
+  "SE0000531881": {
+    "name": "Storebrand Europa A SEK",
+    "provider": "storebrand"
+  },
+  "SE0029502491": {
+    "name": "Storebrand Europa B SEK",
+    "provider": "storebrand"
+  },
+  "SE0010714113": {
+    "name": "Storebrand Europa Plus A SEK",
+    "provider": "storebrand"
+  },
+  "SE0010714121": {
+    "name": "Storebrand Europa Plus B SEK",
+    "provider": "storebrand"
+  },
   "SE0004807097": {
     "name": "Storebrand FRN Företagsobligation A SEK H",
+    "provider": "storebrand"
+  },
+  "SE0006964656": {
+    "name": "Storebrand FRN Företagsobligation B SEK H",
+    "provider": "storebrand"
+  },
+  "SE0011613926": {
+    "name": "Storebrand FRN Företagsobligation C SEK H",
+    "provider": "storebrand"
+  },
+  "SE0000671919": {
+    "name": "Storebrand Global All Countries A SEK",
+    "provider": "storebrand"
+  },
+  "SE0006964664": {
+    "name": "Storebrand Global All Countries B SEK",
+    "provider": "storebrand"
+  },
+  "SE0021921111": {
+    "name": "Storebrand Global All Countries C SEK",
+    "provider": "storebrand"
+  },
+  "SE0020844801": {
+    "name": "Storebrand Global Corporate Bond IG 1-3Y A SEK H",
+    "provider": "storebrand"
+  },
+  "SE0020844819": {
+    "name": "Storebrand Global Corporate Bond IG 1-3Y B SEK H",
+    "provider": "storebrand"
+  },
+  "SE0010831578": {
+    "name": "Storebrand Global Corporate Bond IG 4-6Y A SEK H",
+    "provider": "storebrand"
+  },
+  "SE0010831586": {
+    "name": "Storebrand Global Corporate Bond IG 4-6Y B SEK H",
+    "provider": "storebrand"
+  },
+  "SE0026577900": {
+    "name": "Storebrand Global Developed Markets A SEK",
+    "provider": "storebrand"
+  },
+  "SE0027620626": {
+    "name": "Storebrand Global Developed Markets B SEK",
+    "provider": "storebrand"
+  },
+  "SE0005224078": {
+    "name": "Storebrand Global High Dividend Low Volatility A SEK",
+    "provider": "storebrand"
+  },
+  "SE0006964649": {
+    "name": "Storebrand Global High Dividend Low Volatility B SEK",
+    "provider": "storebrand"
+  },
+  "SE0011642958": {
+    "name": "Storebrand Global Multifactor A SEK",
+    "provider": "storebrand"
+  },
+  "SE0011642966": {
+    "name": "Storebrand Global Multifactor B SEK",
+    "provider": "storebrand"
+  },
+  "SE0017833197": {
+    "name": "Storebrand Global Multifactor C SEK",
+    "provider": "storebrand"
+  },
+  "SE0008129985": {
+    "name": "Storebrand Global Plus A SEK",
+    "provider": "storebrand"
+  },
+  "SE0008129993": {
+    "name": "Storebrand Global Plus B SEK",
+    "provider": "storebrand"
+  },
+  "SE0004576452": {
+    "name": "Storebrand Global Solutions A SEK",
+    "provider": "storebrand"
+  },
+  "SE0010920843": {
+    "name": "Storebrand Global Solutions B SEK",
+    "provider": "storebrand"
+  },
+  "SE0006763967": {
+    "name": "Storebrand Grön Obligation A SEK H",
+    "provider": "storebrand"
+  },
+  "SE0009806979": {
+    "name": "Storebrand Grön Obligation B SEK H",
+    "provider": "storebrand"
+  },
+  "SE0026224248": {
+    "name": "Storebrand Grön Obligation C SEK H",
+    "provider": "storebrand"
+  },
+  "SE0013877263": {
+    "name": "Storebrand High Yield Företagsobligation A SEK H",
+    "provider": "storebrand"
+  },
+  "SE0013877289": {
+    "name": "Storebrand High Yield Företagsobligation B SEK H",
+    "provider": "storebrand"
+  },
+  "SE0013877297": {
+    "name": "Storebrand High Yield Företagsobligation C SEK H",
+    "provider": "storebrand"
+  },
+  "SE0000621393": {
+    "name": "Storebrand Japan A SEK",
+    "provider": "storebrand"
+  },
+  "SE0029502640": {
+    "name": "Storebrand Japan B SEK",
+    "provider": "storebrand"
+  },
+  "SE0000522500": {
+    "name": "Storebrand Kortränta A SEK H",
+    "provider": "storebrand"
+  },
+  "SE0019763954": {
+    "name": "Storebrand Kortränta B SEK H",
+    "provider": "storebrand"
+  },
+  "SE0019763970": {
+    "name": "Storebrand Kortränta C SEK H",
+    "provider": "storebrand"
+  },
+  "SE0007279781": {
+    "name": "Storebrand Mix 100",
+    "provider": "storebrand"
+  },
+  "SE0026577736": {
+    "name": "Storebrand Mix 120",
+    "provider": "storebrand"
+  },
+  "SE0007279757": {
+    "name": "Storebrand Mix 20",
+    "provider": "storebrand"
+  },
+  "SE0007279765": {
+    "name": "Storebrand Mix 50",
+    "provider": "storebrand"
+  },
+  "SE0007279773": {
+    "name": "Storebrand Mix 80",
+    "provider": "storebrand"
+  },
+  "SE0000522518": {
+    "name": "Storebrand Obligation A SEK",
+    "provider": "storebrand"
+  },
+  "SE0019764622": {
+    "name": "Storebrand Obligation B SEK",
+    "provider": "storebrand"
+  },
+  "SE0011613942": {
+    "name": "Storebrand Obligation C SEK",
+    "provider": "storebrand"
+  },
+  "NO0011110264": {
+    "name": "Storebrand Renewable Energy A2",
+    "provider": "storebrand"
+  },
+  "NO0011030355": {
+    "name": "Storebrand Smart Cities A2",
+    "provider": "storebrand"
+  },
+  "SE0000529992": {
+    "name": "Storebrand Sverige A SEK",
+    "provider": "storebrand"
+  },
+  "SE0026876831": {
+    "name": "Storebrand Sverige All Cap A SEK",
+    "provider": "storebrand"
+  },
+  "SE0026876823": {
+    "name": "Storebrand Sverige All Cap B SEK",
+    "provider": "storebrand"
+  },
+  "SE0006964631": {
+    "name": "Storebrand Sverige B SEK",
+    "provider": "storebrand"
+  },
+  "SE0017833205": {
+    "name": "Storebrand Sverige C SEK",
+    "provider": "storebrand"
+  },
+  "SE0008964407": {
+    "name": "Storebrand Sverige Plus A SEK",
+    "provider": "storebrand"
+  },
+  "SE0008964472": {
+    "name": "Storebrand Sverige Plus B SEK",
+    "provider": "storebrand"
+  },
+  "SE0018168262": {
+    "name": "Storebrand Sverige Plus C SEK",
+    "provider": "storebrand"
+  },
+  "SE0014808382": {
+    "name": "Storebrand Sverige Småbolag Plus A SEK",
+    "provider": "storebrand"
+  },
+  "SE0014808390": {
+    "name": "Storebrand Sverige Småbolag Plus B SEK",
+    "provider": "storebrand"
+  },
+  "SE0019764259": {
+    "name": "Storebrand Sverige Småbolag Plus C SEK",
+    "provider": "storebrand"
+  },
+  "SE0000594111": {
+    "name": "Storebrand USA A SEK",
+    "provider": "storebrand"
+  },
+  "SE0023594478": {
+    "name": "Storebrand USA B SEK",
+    "provider": "storebrand"
+  },
+  "SE0017485360": {
+    "name": "Storebrand USA Plus A SEK",
     "provider": "storebrand"
   },
   "SE0000709123": {
