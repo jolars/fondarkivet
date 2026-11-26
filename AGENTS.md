@@ -21,8 +21,8 @@
   the local archive, and build the site. Pass fresh directories to keep an
   existing local archive intact during a smoke test.
 - Run `npm ci` to install Wrangler. Run `npm run preview` to serve the Worker
-  with local R2, or `npm run build && npm run deploy:check` for a
-  deployment dry run.
+  with local R2, or `npm run build && npm run deploy:check` for a deployment dry
+  run.
 - Run `ruff check` and `ruff format --check` in devenv. CI runs both commands
   through `uv run --locked`. Use `actionlint` for workflow changes and
   `panache format --check README.md` to check Markdown formatting.
