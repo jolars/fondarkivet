@@ -623,10 +623,25 @@
     "slug": "plus-teknologi-sverige",
     "page_id": 284761
   },
+  "SE0001015348": {
+    "name": "Spiltan Aktiefond Stabil",
+    "provider": "spiltan",
+    "slug": "spiltan-aktiefond-stabil"
+  },
+  "SE0001015355": {
+    "name": "Spiltan Småbolagsfond",
+    "provider": "spiltan",
+    "slug": "spiltan-smabolagsfond"
+  },
   "SE0002152140": {
     "name": "Spiltan Räntefond Sverige",
     "provider": "spiltan",
     "slug": "spiltan-rantefond-sverige"
+  },
+  "SE0002566349": {
+    "name": "Spiltan Aktiefond Småland",
+    "provider": "spiltan",
+    "slug": "spiltan-aktiefond-smaland"
   },
   "SE0004297927": {
     "name": "Spiltan Aktiefond Investmentbolag",
@@ -642,6 +657,16 @@
     "name": "Spiltan Globalfond Investmentbolag",
     "provider": "spiltan",
     "slug": "spiltan-globalfond-investmentbolag"
+  },
+  "SE0012740926": {
+    "name": "Spiltan Enkel",
+    "provider": "spiltan",
+    "slug": "spiltan-enkel"
+  },
+  "SE0028000067": {
+    "name": "Spiltan Europafond Investmentbolag",
+    "provider": "spiltan",
+    "slug": "spiltan-europafond-investmentbolag"
   },
   "SE0004807097": {
     "name": "Storebrand FRN Företagsobligation A SEK H",
