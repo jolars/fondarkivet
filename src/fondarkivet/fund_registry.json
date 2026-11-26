@@ -559,6 +559,66 @@
     "security_id": "F00000MTKN",
     "share_class": "A1 SEK"
   },
+  "SE0000837056": {
+    "name": "Länsförsäkringar Asienfond A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837064": {
+    "name": "Länsförsäkringar Sparmål 2040",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837072": {
+    "name": "Länsförsäkringar Sparmål 2035",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837080": {
+    "name": "Länsförsäkringar Sparmål 2030",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837098": {
+    "name": "Länsförsäkringar Sparmål 2025",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837106": {
+    "name": "Länsförsäkringar Sparmål 2020",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837114": {
+    "name": "Länsförsäkringar Sparmål 2015",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837197": {
+    "name": "Länsförsäkringar Mix Vision A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837205": {
+    "name": "Länsförsäkringar Global Vision A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837213": {
+    "name": "Länsförsäkringar Tillväxtmarknad Aktiv A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837221": {
+    "name": "Länsförsäkringar Sverige Vision A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837239": {
+    "name": "Länsförsäkringar Småbolag Sverige Vision A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837247": {
+    "name": "Länsförsäkringar Kort räntefond",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837254": {
+    "name": "Länsförsäkringar Lång Räntefond A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837262": {
+    "name": "Länsförsäkringar USA Aktiv A",
+    "provider": "lansforsakringar"
+  },
   "SE0000837296": {
     "name": "Länsförsäkringar Japan Index",
     "provider": "lansforsakringar"
@@ -567,8 +627,20 @@
     "name": "Länsförsäkringar Fastighetsfond A",
     "provider": "lansforsakringar"
   },
+  "SE0000837353": {
+    "name": "Länsförsäkringar Europa Aktiv A",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837379": {
+    "name": "Länsförsäkringar Sparmål 2045",
+    "provider": "lansforsakringar"
+  },
   "SE0002656611": {
     "name": "Länsförsäkringar Sverige Index",
+    "provider": "lansforsakringar"
+  },
+  "SE0002793935": {
+    "name": "Länsförsäkringar Europa Index",
     "provider": "lansforsakringar"
   },
   "SE0002793943": {
@@ -579,8 +651,96 @@
     "name": "Länsförsäkringar Global Index",
     "provider": "lansforsakringar"
   },
+  "SE0005506276": {
+    "name": "Länsförsäkringar Företagsobligation Vision",
+    "provider": "lansforsakringar"
+  },
   "SE0005796331": {
     "name": "Länsförsäkringar Tillväxtmarknad Index A",
+    "provider": "lansforsakringar"
+  },
+  "SE0006888061": {
+    "name": "Länsförsäkringar Bekväm Fond Tillväxt A",
+    "provider": "lansforsakringar"
+  },
+  "SE0006963518": {
+    "name": "Länsförsäkringar Bekväm Fond Balans A",
+    "provider": "lansforsakringar"
+  },
+  "SE0006963526": {
+    "name": "Länsförsäkringar Bekväm Fond Defensiv A",
+    "provider": "lansforsakringar"
+  },
+  "SE0006963534": {
+    "name": "Länsförsäkringar Bekväm Fond Potential A",
+    "provider": "lansforsakringar"
+  },
+  "SE0006963559": {
+    "name": "Länsförsäkringar Bekväm Fond Stabil A",
+    "provider": "lansforsakringar"
+  },
+  "SE0008241442": {
+    "name": "Länsförsäkringar Sparmål 2060",
+    "provider": "lansforsakringar"
+  },
+  "SE0008241459": {
+    "name": "Länsförsäkringar Sparmål 2055",
+    "provider": "lansforsakringar"
+  },
+  "SE0008241467": {
+    "name": "Länsförsäkringar Sparmål 2050",
+    "provider": "lansforsakringar"
+  },
+  "SE0008585301": {
+    "name": "Länsförsäkringar Asienfond B",
+    "provider": "lansforsakringar"
+  },
+  "SE0008585376": {
+    "name": "Länsförsäkringar Europa Aktiv B",
+    "provider": "lansforsakringar"
+  },
+  "SE0008585459": {
+    "name": "Länsförsäkringar Småbolag Sverige Vision B",
+    "provider": "lansforsakringar"
+  },
+  "SE0008585467": {
+    "name": "Länsförsäkringar Global Vision B",
+    "provider": "lansforsakringar"
+  },
+  "SE0008585475": {
+    "name": "Länsförsäkringar Sverige Vision B",
+    "provider": "lansforsakringar"
+  },
+  "SE0008585483": {
+    "name": "Länsförsäkringar Tillväxtmarknad Aktiv B",
+    "provider": "lansforsakringar"
+  },
+  "SE0008585517": {
+    "name": "Länsförsäkringar USA Aktiv B",
+    "provider": "lansforsakringar"
+  },
+  "SE0008962914": {
+    "name": "Länsförsäkringar Multistrategi",
+    "provider": "lansforsakringar"
+  },
+  "SE0010739912": {
+    "name": "Länsförsäkringar Fastighet Europa",
+    "provider": "lansforsakringar"
+  },
+  "SE0010739920": {
+    "name": "Länsförsäkringar Globala Mål Index",
+    "provider": "lansforsakringar"
+  },
+  "SE0013109329": {
+    "name": "Länsförsäkringar Balanserad Räntefond",
+    "provider": "lansforsakringar"
+  },
+  "SE0014401782": {
+    "name": "Länsförsäkringar Sparmål 2065",
+    "provider": "lansforsakringar"
+  },
+  "SE0021923596": {
+    "name": "Länsförsäkringar Barnspar 2045",
     "provider": "lansforsakringar"
   },
   "IE000P8IJ918": {
