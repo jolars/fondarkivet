@@ -85,6 +85,480 @@
     "security_id": "F000016JFT",
     "share_class": "A1 SEK"
   },
+  "SE0000900169": {
+    "name": "AstraZeneca Allemansfond (F1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0000005SI",
+    "share_class": "F1 SEK"
+  },
+  "SE0000355828": {
+    "name": "Handelsbanken Amerika (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F5U",
+    "share_class": "A1 SEK"
+  },
+  "SE0011336908": {
+    "name": "Handelsbanken Amerika Småbolag (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011HYC",
+    "share_class": "A1 SEK"
+  },
+  "SE0000356073": {
+    "name": "Handelsbanken Asien (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F5V",
+    "share_class": "A1 SEK"
+  },
+  "SE0005932993": {
+    "name": "Handelsbanken Asien Småbolag (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000UI1T",
+    "share_class": "A1 SEK"
+  },
+  "SE0011090299": {
+    "name": "Handelsbanken Auto 25 Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000010MY1",
+    "share_class": "A1 SEK"
+  },
+  "SE0011090307": {
+    "name": "Handelsbanken Auto 50 Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000010MY2",
+    "share_class": "A1 SEK"
+  },
+  "SE0011090315": {
+    "name": "Handelsbanken Auto 75 Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000010MY3",
+    "share_class": "A1 SEK"
+  },
+  "SE0011090323": {
+    "name": "Handelsbanken Auto 100 Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000010MY4",
+    "share_class": "A1 SEK"
+  },
+  "SE0020846681": {
+    "name": "Handelsbanken Developed Markets Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001H5RX",
+    "share_class": "A1 SEK"
+  },
+  "SE0000356271": {
+    "name": "Handelsbanken EMEA (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F6L",
+    "share_class": "A1 SEK"
+  },
+  "SE0011338409": {
+    "name": "Handelsbanken Emerging Markets Index (Criteria) (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011ILV",
+    "share_class": "A1 SEK"
+  },
+  "SE0000396574": {
+    "name": "Handelsbanken Europa Småbolag (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04KRC",
+    "share_class": "A1 SEK"
+  },
+  "SE0005569316": {
+    "name": "Handelsbanken Flexibel Ränta (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000S8FR",
+    "share_class": "A1 SEK"
+  },
+  "SE0009697089": {
+    "name": "Handelsbanken Fokus 25 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000YXDU",
+    "share_class": "A1 SEK"
+  },
+  "SE0009697113": {
+    "name": "Handelsbanken Fokus 50 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000YXDV",
+    "share_class": "A1 SEK"
+  },
+  "SE0009697147": {
+    "name": "Handelsbanken Fokus 75 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000YXDW",
+    "share_class": "A1 SEK"
+  },
+  "SE0009697170": {
+    "name": "Handelsbanken Fokus 100 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000YXDX",
+    "share_class": "A1 SEK"
+  },
+  "SE0005993128": {
+    "name": "Handelsbanken Företagsobligation (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000UDDD",
+    "share_class": "A1 SEK"
+  },
+  "SE0007820584": {
+    "name": "Handelsbanken Företagsobligation Investment Grade (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000WNEO",
+    "share_class": "A1 SEK"
+  },
+  "SE0000356263": {
+    "name": "Handelsbanken Global (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F6J",
+    "share_class": "A1 SEK"
+  },
+  "SE0019019654": {
+    "name": "Handelsbanken Global Digital (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001EZ4W",
+    "share_class": "A1 SEK"
+  },
+  "SE0011309632": {
+    "name": "Handelsbanken Global Dynamisk Strategi (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011IMA",
+    "share_class": "A1 SEK"
+  },
+  "SE0025667256": {
+    "name": "Handelsbanken Global Index Core (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001T2G0",
+    "share_class": "A1 SEK"
+  },
+  "SE0011309707": {
+    "name": "Handelsbanken Global Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011IM2",
+    "share_class": "A1 SEK"
+  },
+  "SE0005965662": {
+    "name": "Handelsbanken Hållbar Energi (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000UI2B",
+    "share_class": "A1 SEK"
+  },
+  "SE0020180800": {
+    "name": "Handelsbanken Hållbar Global (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001HXJL",
+    "share_class": "A1 SEK"
+  },
+  "SE0017831423": {
+    "name": "Handelsbanken Hållbar Global High Yield (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001DYA5",
+    "share_class": "A1 SEK"
+  },
+  "SE0011751155": {
+    "name": "Handelsbanken Hållbar Global Obligation (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000012777",
+    "share_class": "A1 SEK"
+  },
+  "SE0000735375": {
+    "name": "Handelsbanken Hälsovård (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F38",
+    "share_class": "A1 SEK"
+  },
+  "SE0020551687": {
+    "name": "Handelsbanken Infrastruktur och Beredskap (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001GZXD",
+    "share_class": "A1 SEK"
+  },
+  "SE0008613863": {
+    "name": "Handelsbanken Institutionell Kortränta (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000XDYP",
+    "share_class": "A1 SEK"
+  },
+  "SE0000356099": {
+    "name": "Handelsbanken Japan (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F61",
+    "share_class": "A1 SEK"
+  },
+  "SE0011309491": {
+    "name": "Handelsbanken Kortränta (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011ES7",
+    "share_class": "A1 SEK"
+  },
+  "SE0000356305": {
+    "name": "Handelsbanken Kortränta Defensiv (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F6C",
+    "share_class": "A1 SEK"
+  },
+  "SE0000356297": {
+    "name": "Handelsbanken Långränta (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F66",
+    "share_class": "A1 SEK"
+  },
+  "SE0008431811": {
+    "name": "Handelsbanken Microcap Norden (A4 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000XDYM",
+    "share_class": "A4 SEK"
+  },
+  "SE0008431803": {
+    "name": "Handelsbanken Microcap Sverige (F4 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000XDYL",
+    "share_class": "F4 SEK"
+  },
+  "SE0005851318": {
+    "name": "Handelsbanken Multi Asset 25 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000U4MC",
+    "share_class": "A1 SEK"
+  },
+  "SE0001192618": {
+    "name": "Handelsbanken Multi Asset 50 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04VD0",
+    "share_class": "A1 SEK"
+  },
+  "SE0002979245": {
+    "name": "Handelsbanken Multi Asset 75 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0000045YF",
+    "share_class": "A1 SEK"
+  },
+  "SE0001192600": {
+    "name": "Handelsbanken Multi Asset 100 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04VYP",
+    "share_class": "A1 SEK"
+  },
+  "SE0017831332": {
+    "name": "Handelsbanken Nanocap Sverige (F4 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001DYA6",
+    "share_class": "F4 SEK"
+  },
+  "SE0000356230": {
+    "name": "Handelsbanken Norden (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F64",
+    "share_class": "A1 SEK"
+  },
+  "SE0000522724": {
+    "name": "Handelsbanken Nordiska Småbolag (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F65",
+    "share_class": "A1 SEK"
+  },
+  "SE0011307891": {
+    "name": "Handelsbanken Pension 40 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011DN5",
+    "share_class": "A1 SEK"
+  },
+  "SE0011307925": {
+    "name": "Handelsbanken Pension 50 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011DN8",
+    "share_class": "A1 SEK"
+  },
+  "SE0005851300": {
+    "name": "Handelsbanken Pension 50 Aktiv (F1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000U4M8",
+    "share_class": "F1 SEK"
+  },
+  "SE0011307958": {
+    "name": "Handelsbanken Pension 60 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011DNB",
+    "share_class": "A1 SEK"
+  },
+  "SE0005851292": {
+    "name": "Handelsbanken Pension 60 Aktiv (F1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000U4M9",
+    "share_class": "F1 SEK"
+  },
+  "SE0011307982": {
+    "name": "Handelsbanken Pension 70 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011DNE",
+    "share_class": "A1 SEK"
+  },
+  "SE0005851284": {
+    "name": "Handelsbanken Pension 70 Aktiv (F1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000U4MA",
+    "share_class": "F1 SEK"
+  },
+  "SE0011308014": {
+    "name": "Handelsbanken Pension 80 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011DNH",
+    "share_class": "A1 SEK"
+  },
+  "SE0005851276": {
+    "name": "Handelsbanken Pension 80 Aktiv (F1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000U4MB",
+    "share_class": "F1 SEK"
+  },
+  "SE0011308055": {
+    "name": "Handelsbanken Pension 90 (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000011DNK",
+    "share_class": "A1 SEK"
+  },
+  "SE0007157854": {
+    "name": "Handelsbanken Pension 90 Aktiv (F1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000XRZG",
+    "share_class": "F1 SEK"
+  },
+  "SE0020051266": {
+    "name": "Handelsbanken Prime Balanced (F15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001G4FC",
+    "share_class": "F15 SEK"
+  },
+  "SE0020051290": {
+    "name": "Handelsbanken Prime Defensive (F15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001G4FD",
+    "share_class": "F15 SEK"
+  },
+  "SE0020051274": {
+    "name": "Handelsbanken Prime Moderate (F15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001G4FE",
+    "share_class": "F15 SEK"
+  },
+  "SE0020051308": {
+    "name": "Handelsbanken Prime Opportunity (F15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001G4FF",
+    "share_class": "F15 SEK"
+  },
+  "SE0020051282": {
+    "name": "Handelsbanken Prime Potential (F15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001G4FG",
+    "share_class": "F15 SEK"
+  },
+  "SE0005991429": {
+    "name": "Handelsbanken Ränteavkastning (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000UF21",
+    "share_class": "A1 SEK"
+  },
+  "SE0001163171": {
+    "name": "Handelsbanken Räntestrategi (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR060WJ",
+    "share_class": "A1 SEK"
+  },
+  "SE0007157862": {
+    "name": "Handelsbanken Räntestrategi Plus (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000VUFX",
+    "share_class": "A1 SEK"
+  },
+  "SE0022448833": {
+    "name": "Handelsbanken Selection Fixed Income (A15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001O3RJ",
+    "share_class": "A15 SEK"
+  },
+  "SE0022448932": {
+    "name": "Handelsbanken Selection Fixed Income Criteria (A15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001O3RL",
+    "share_class": "A15 SEK"
+  },
+  "SE0022448858": {
+    "name": "Handelsbanken Selection Global Equities (A15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001O3RN",
+    "share_class": "A15 SEK"
+  },
+  "SE0022448874": {
+    "name": "Handelsbanken Selection Global Equities Criteria (A15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001O3RP",
+    "share_class": "A15 SEK"
+  },
+  "SE0022448890": {
+    "name": "Handelsbanken Selection Swedish Equities (A15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001O3RS",
+    "share_class": "A15 SEK"
+  },
+  "SE0022448916": {
+    "name": "Handelsbanken Selection Swedish Equities Criteria (A15 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001O3RU",
+    "share_class": "A15 SEK"
+  },
+  "SE0000886699": {
+    "name": "Handelsbanken Stiftelsefond (B1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04MW1",
+    "share_class": "B1 SEK"
+  },
+  "SE0000356065": {
+    "name": "Handelsbanken Svenska Småbolag (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F6F",
+    "share_class": "A1 SEK"
+  },
+  "SE0000582033": {
+    "name": "Handelsbanken Sverige (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F6B",
+    "share_class": "A1 SEK"
+  },
+  "SE0003788587": {
+    "name": "Handelsbanken Sverige 100 Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000MTKO",
+    "share_class": "A1 SEK"
+  },
+  "SE0001466368": {
+    "name": "Handelsbanken Sverige Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR063W9",
+    "share_class": "A1 SEK"
+  },
+  "SE0022421335": {
+    "name": "Handelsbanken Sverige LM Index (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00001NGB8",
+    "share_class": "A1 SEK"
+  },
+  "SE0005965639": {
+    "name": "Handelsbanken Sverige Selektiv (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000UF23",
+    "share_class": "A1 SEK"
+  },
+  "SE0000429748": {
+    "name": "Handelsbanken Tillväxtmarknad (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F6I",
+    "share_class": "A1 SEK"
+  },
+  "SE0004139780": {
+    "name": "Handelsbanken USA Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000MTKN",
+    "share_class": "A1 SEK"
+  },
   "SE0000837296": {
     "name": "Länsförsäkringar Japan Index",
     "provider": "lansforsakringar"

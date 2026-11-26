@@ -2,6 +2,7 @@
 
 import json
 import re
+import time
 from datetime import date
 from urllib.request import Request, urlopen
 
@@ -50,4 +51,9 @@ def _fetch_quote(fund: Fund) -> Quote:
 
 
 def fetch_quotes(funds: list[Fund]) -> dict[str, Quote]:
-    return {fund.isin: _fetch_quote(fund) for fund in funds}
+    quotes = {}
+    for index, fund in enumerate(funds):
+        if index:
+            time.sleep(1)
+        quotes[fund.isin] = _fetch_quote(fund)
+    return quotes
