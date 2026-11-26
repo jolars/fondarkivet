@@ -2,7 +2,7 @@
   "name": "fondarkivet",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist/worker && cp src/fondarkivet/web/index.html src/fondarkivet/web/_headers src/fondarkivet/web/logo.png dist/worker/",
+    "build": "mkdir -p dist/worker && cp src/fondarkivet/web/index.html src/fondarkivet/web/_headers src/fondarkivet/web/logo.png src/fondarkivet/web/favicon.svg src/fondarkivet/web/favicon-96x96.png src/fondarkivet/web/favicon.ico src/fondarkivet/web/apple-touch-icon.png src/fondarkivet/web/web-app-manifest-192x192.png src/fondarkivet/web/web-app-manifest-512x512.png src/fondarkivet/web/site.webmanifest dist/worker/",
     "preview": "npm run build && wrangler dev",
     "test": "node --test tests/test_worker.mjs",
     "deploy:check": "wrangler deploy --dry-run",

@@ -77,5 +77,16 @@ def build(quotes: dict[str, Quote], archive: Path, site: Path) -> None:
     (output.parent / "funds.json").write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    for name in ("index.html", "_headers", "logo.png"):
+    for name in (
+        "index.html",
+        "_headers",
+        "logo.png",
+        "favicon.svg",
+        "favicon-96x96.png",
+        "favicon.ico",
+        "apple-touch-icon.png",
+        "web-app-manifest-192x192.png",
+        "web-app-manifest-512x512.png",
+        "site.webmanifest",
+    ):
         copyfile(WEB / name, site / name)
