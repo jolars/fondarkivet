@@ -905,5 +905,401 @@
   "SE0007074117": {
     "name": "Swedbank Robur Access Asien A",
     "provider": "swedbank_robur"
+  },
+  "SE0012428290": {
+    "name": "Swedbank Robur Access Edge Emerging Markets A",
+    "provider": "swedbank_robur"
+  },
+  "SE0014609103": {
+    "name": "Swedbank Robur Access Edge Europe A",
+    "provider": "swedbank_robur"
+  },
+  "SE0014429353": {
+    "name": "Swedbank Robur Access Edge Global A",
+    "provider": "swedbank_robur"
+  },
+  "SE0029855873": {
+    "name": "Swedbank Robur Access Edge Global B",
+    "provider": "swedbank_robur"
+  },
+  "SE0007074091": {
+    "name": "Swedbank Robur Access Edge Japan A",
+    "provider": "swedbank_robur"
+  },
+  "SE0029855865": {
+    "name": "Swedbank Robur Access Edge Japan B",
+    "provider": "swedbank_robur"
+  },
+  "SE0013121522": {
+    "name": "Swedbank Robur Access Edge Sweden A",
+    "provider": "swedbank_robur"
+  },
+  "SE0014556304": {
+    "name": "Swedbank Robur Access Edge USA A",
+    "provider": "swedbank_robur"
+  },
+  "SE0007073937": {
+    "name": "Swedbank Robur Access Europa A",
+    "provider": "swedbank_robur"
+  },
+  "SE0007074059": {
+    "name": "Swedbank Robur Access Global A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000434359": {
+    "name": "Swedbank Robur Access Mix A",
+    "provider": "swedbank_robur"
+  },
+  "SE0007074075": {
+    "name": "Swedbank Robur Access Sverige A",
+    "provider": "swedbank_robur"
+  },
+  "SE0007074083": {
+    "name": "Swedbank Robur Access USA A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602278": {
+    "name": "Swedbank Robur Aktiefond Pension",
+    "provider": "swedbank_robur"
+  },
+  "SE0000538910": {
+    "name": "Swedbank Robur Allemansfond Komplett",
+    "provider": "swedbank_robur"
+  },
+  "SE0000539447": {
+    "name": "Swedbank Robur Asienfond A",
+    "provider": "swedbank_robur"
+  },
+  "SE0020539385": {
+    "name": "Swedbank Robur Climate Bond A",
+    "provider": "swedbank_robur"
+  },
+  "SE0010598367": {
+    "name": "Swedbank Robur Climate Bond High Yield A",
+    "provider": "swedbank_robur"
+  },
+  "SE0015948963": {
+    "name": "Swedbank Robur Climate Impact A",
+    "provider": "swedbank_robur"
+  },
+  "SE0005506300": {
+    "name": "Swedbank Robur Corporate Bond Europe A",
+    "provider": "swedbank_robur"
+  },
+  "SE0017483399": {
+    "name": "Swedbank Robur Corporate Bond Europe B",
+    "provider": "swedbank_robur"
+  },
+  "SE0011062025": {
+    "name": "Swedbank Robur Corporate Bond Europe High Yield A",
+    "provider": "swedbank_robur"
+  },
+  "SE0017483415": {
+    "name": "Swedbank Robur Corporate Bond Europe High Yield B",
+    "provider": "swedbank_robur"
+  },
+  "SE0009805252": {
+    "name": "Swedbank Robur Corporate Bond Europe IG A",
+    "provider": "swedbank_robur"
+  },
+  "SE0016831077": {
+    "name": "Swedbank Robur Corporate Bond Nordic A",
+    "provider": "swedbank_robur"
+  },
+  "SE0029855857": {
+    "name": "Swedbank Robur Corporate Bond Nordic B",
+    "provider": "swedbank_robur"
+  },
+  "SE0025667173": {
+    "name": "Swedbank Robur Corporate Bond Nordic High Yield A",
+    "provider": "swedbank_robur"
+  },
+  "SE0025667181": {
+    "name": "Swedbank Robur Corporate Bond Nordic High Yield B",
+    "provider": "swedbank_robur"
+  },
+  "SE0019354218": {
+    "name": "Swedbank Robur Emerging Europe A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000539454": {
+    "name": "Swedbank Robur Europafond A",
+    "provider": "swedbank_robur"
+  },
+  "SE0013524949": {
+    "name": "Swedbank Robur Europafond I",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602294": {
+    "name": "Swedbank Robur Exportfond A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000537763": {
+    "name": "Swedbank Robur Fastighet A",
+    "provider": "swedbank_robur"
+  },
+  "SE0011451772": {
+    "name": "Swedbank Robur Fokus",
+    "provider": "swedbank_robur"
+  },
+  "SE0000540601": {
+    "name": "Swedbank Robur Folksam LO Obligation",
+    "provider": "swedbank_robur"
+  },
+  "SE0000540593": {
+    "name": "Swedbank Robur Folksam LO Sverige",
+    "provider": "swedbank_robur"
+  },
+  "SE0000540627": {
+    "name": "Swedbank Robur Folksam LO Världen",
+    "provider": "swedbank_robur"
+  },
+  "SE0029504570": {
+    "name": "Swedbank Robur Food and Water A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602237": {
+    "name": "Swedbank Robur Förbundsfond Global",
+    "provider": "swedbank_robur"
+  },
+  "SE0015193321": {
+    "name": "Swedbank Robur Förbundsfond Sverige Plus",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602211": {
+    "name": "Swedbank Robur Förbundsräntefond",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602229": {
+    "name": "Swedbank Robur Förbundsräntefond Kort",
+    "provider": "swedbank_robur"
+  },
+  "SE0001912924": {
+    "name": "Swedbank Robur Global Emerging Markets A",
+    "provider": "swedbank_robur"
+  },
+  "SE0005249661": {
+    "name": "Swedbank Robur Global High Dividend A",
+    "provider": "swedbank_robur"
+  },
+  "SE0017483423": {
+    "name": "Swedbank Robur Global High Dividend B",
+    "provider": "swedbank_robur"
+  },
+  "SE0011167899": {
+    "name": "Swedbank Robur Global Impact A",
+    "provider": "swedbank_robur"
+  },
+  "SE0027301714": {
+    "name": "Swedbank Robur Global Selektiv A",
+    "provider": "swedbank_robur"
+  },
+  "SE0027666462": {
+    "name": "Swedbank Robur Global Selektiv B",
+    "provider": "swedbank_robur"
+  },
+  "SE0029504521": {
+    "name": "Swedbank Robur Global Systematic A",
+    "provider": "swedbank_robur"
+  },
+  "SE0029504554": {
+    "name": "Swedbank Robur Global Systematic B",
+    "provider": "swedbank_robur"
+  },
+  "SE0029504562": {
+    "name": "Swedbank Robur Global Systematic I",
+    "provider": "swedbank_robur"
+  },
+  "SE0000537680": {
+    "name": "Swedbank Robur Global Trends A",
+    "provider": "swedbank_robur"
+  },
+  "SE0017133978": {
+    "name": "Swedbank Robur Global Trends J",
+    "provider": "swedbank_robur"
+  },
+  "SE0000542979": {
+    "name": "Swedbank Robur Globalfond A",
+    "provider": "swedbank_robur"
+  },
+  "SE0013109519": {
+    "name": "Swedbank Robur Globalfond I",
+    "provider": "swedbank_robur"
+  },
+  "SE0000639445": {
+    "name": "Swedbank Robur Healthcare A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000708950": {
+    "name": "Swedbank Robur Humanfond",
+    "provider": "swedbank_robur"
+  },
+  "SE0000996241": {
+    "name": "Swedbank Robur Kapitalinvest",
+    "provider": "swedbank_robur"
+  },
+  "SE0000885105": {
+    "name": "Swedbank Robur KPA Aktiefond",
+    "provider": "swedbank_robur"
+  },
+  "SE0000885089": {
+    "name": "Swedbank Robur KPA Blandfond",
+    "provider": "swedbank_robur"
+  },
+  "SE0009806839": {
+    "name": "Swedbank Robur Microcap",
+    "provider": "swedbank_robur"
+  },
+  "SE0018768871": {
+    "name": "Swedbank Robur Mix Balanserad",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602252": {
+    "name": "Swedbank Robur Mixfond Pension",
+    "provider": "swedbank_robur"
+  },
+  "SE0000538969": {
+    "name": "Swedbank Robur New Energy A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000537722": {
+    "name": "Swedbank Robur Nordenfond A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602260": {
+    "name": "Swedbank Robur Obligation A",
+    "provider": "swedbank_robur"
+  },
+  "SE0016785885": {
+    "name": "Swedbank Robur Obligation B",
+    "provider": "swedbank_robur"
+  },
+  "SE0014609111": {
+    "name": "Swedbank Robur Obligation Lång Inst",
+    "provider": "swedbank_robur"
+  },
+  "SE0000543076": {
+    "name": "Swedbank Robur Obligation Plus A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000543043": {
+    "name": "Swedbank Robur Räntefond Kort A",
+    "provider": "swedbank_robur"
+  },
+  "SE0005467982": {
+    "name": "Swedbank Robur Räntefond Kort Plus A",
+    "provider": "swedbank_robur"
+  },
+  "SE0025667207": {
+    "name": "Swedbank Robur Security and Defence A",
+    "provider": "swedbank_robur"
+  },
+  "SE0006219184": {
+    "name": "Swedbank Robur Selection 100 A",
+    "provider": "swedbank_robur"
+  },
+  "SE0002135566": {
+    "name": "Swedbank Robur Selection 25 A",
+    "provider": "swedbank_robur"
+  },
+  "SE0001285362": {
+    "name": "Swedbank Robur Selection 50 A",
+    "provider": "swedbank_robur"
+  },
+  "SE0002135558": {
+    "name": "Swedbank Robur Selection 75 A",
+    "provider": "swedbank_robur"
+  },
+  "SE0006219168": {
+    "name": "Swedbank Robur Selection Ränta A",
+    "provider": "swedbank_robur"
+  },
+  "SE0011643618": {
+    "name": "Swedbank Robur Small Cap Emerging Markets A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000542771": {
+    "name": "Swedbank Robur Small Cap Europe A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000539439": {
+    "name": "Swedbank Robur Small Cap Global A",
+    "provider": "swedbank_robur"
+  },
+  "SE0012729515": {
+    "name": "Swedbank Robur Small Cap USA A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000537706": {
+    "name": "Swedbank Robur Småbolagsfond Norden A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000602302": {
+    "name": "Swedbank Robur Småbolagsfond Sverige A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000709008": {
+    "name": "Swedbank Robur Stiftelsefond A",
+    "provider": "swedbank_robur"
+  },
+  "SE0018534547": {
+    "name": "Swedbank Robur Stiftelsefond B",
+    "provider": "swedbank_robur"
+  },
+  "SE0000996233": {
+    "name": "Swedbank Robur Sverige A",
+    "provider": "swedbank_robur"
+  },
+  "SE0017486962": {
+    "name": "Swedbank Robur Sverige I",
+    "provider": "swedbank_robur"
+  },
+  "SE0017486970": {
+    "name": "Swedbank Robur Sverige J",
+    "provider": "swedbank_robur"
+  },
+  "SE0027301698": {
+    "name": "Swedbank Robur Sverige Selektiv A",
+    "provider": "swedbank_robur"
+  },
+  "SE0027301706": {
+    "name": "Swedbank Robur Sverige Selektiv B",
+    "provider": "swedbank_robur"
+  },
+  "SE0000542987": {
+    "name": "Swedbank Robur Talenten Aktiefond MEGA J",
+    "provider": "swedbank_robur"
+  },
+  "SE0000542995": {
+    "name": "Swedbank Robur Talenten Räntefond MEGA B",
+    "provider": "swedbank_robur"
+  },
+  "SE0000538944": {
+    "name": "Swedbank Robur Technology A",
+    "provider": "swedbank_robur"
+  },
+  "SE0001175712": {
+    "name": "Swedbank Robur Transfer 50",
+    "provider": "swedbank_robur"
+  },
+  "SE0001175720": {
+    "name": "Swedbank Robur Transfer 60",
+    "provider": "swedbank_robur"
+  },
+  "SE0001175738": {
+    "name": "Swedbank Robur Transfer 70",
+    "provider": "swedbank_robur"
+  },
+  "SE0001175746": {
+    "name": "Swedbank Robur Transfer 80",
+    "provider": "swedbank_robur"
+  },
+  "SE0004548949": {
+    "name": "Swedbank Robur Transfer 90",
+    "provider": "swedbank_robur"
+  },
+  "SE0000539470": {
+    "name": "Swedbank Robur USA A",
+    "provider": "swedbank_robur"
   }
 }
