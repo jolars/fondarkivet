@@ -673,6 +673,18 @@
     "slug": "plus-teknologi-sverige",
     "page_id": 284761
   },
+  "SE0016828800": {
+    "name": "PLUS Hälsovård Sverige Index",
+    "provider": "plus",
+    "slug": "plus-halsovard-sverige",
+    "page_id": 284760
+  },
+  "SE0028128488": {
+    "name": "PLUS Global Index",
+    "provider": "plus",
+    "slug": "plus-global-index",
+    "page_id": 298321
+  },
   "SE0001015348": {
     "name": "Spiltan Aktiefond Stabil",
     "provider": "spiltan",
