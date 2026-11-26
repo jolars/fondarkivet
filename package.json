@@ -2,7 +2,7 @@
   "name": "fondarkivet",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist/worker && cp src/fondarkivet/web/index.html src/fondarkivet/web/_headers dist/worker/",
+    "build": "mkdir -p dist/worker && cp src/fondarkivet/web/index.html src/fondarkivet/web/_headers src/fondarkivet/web/logo.png dist/worker/",
     "preview": "npm run build && wrangler dev",
     "test": "node --test tests/test_worker.mjs",
     "deploy:check": "wrangler deploy --dry-run",

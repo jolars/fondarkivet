@@ -1,4 +1,4 @@
-# Fondarkivet
+# Fondarkivet <img src="https://raw.githubusercontent.com/jolars/fondarkivet/refs/heads/main/src/fondarkivet/web/logo.png" align="right" width="96" alt="A green archive box with a line chart" />
 
 Fondarkivet records the latest published NAV from Spiltan Fonder, AMF Fonder,
 and Handelsbanken Fonder. Each nightly run records one quote per configured
