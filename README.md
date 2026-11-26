@@ -36,20 +36,44 @@ uv run --locked fondarkivet archive site
 The collector keeps observations in `archive` and generates the website in
 `site`. Run `uv build` to create a wheel and source distribution in `dist/`.
 
-With Node.js 24, install Wrangler with `npm ci` and run `npm run preview` to
-serve the generated site locally. Run `npm run deploy:check` to validate the
-deployment without publishing.
+Serve the CSV-backed site locally with
+`uv run python -m http.server --directory site`. To preview the Cloudflare
+Worker with Node.js 24, run `npm ci` and `npm run preview`. The Worker uses a
+local R2 bucket during preview. Run `npm run build` followed by
+`npm run deploy:check` to validate the deployment without publishing.
 
 ## Publish
 
-On GitHub, run **Refresh NAVs** manually to check collection from a hosted
-runner. The workflow runs nightly at 03:17 UTC. To publish from `main`, set up
-`fondarkivet.se` as an active zone in Cloudflare, then configure GitHub Actions.
+Production keeps the archive in a private Cloudflare R2 bucket. Set up
+`fondarkivet.se` as an active Cloudflare zone and enable R2 on the account.
 
-1. Add `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` as GitHub Actions
+1. Create an R2 Standard bucket named `fondarkivet-nav`. Create an [R2 API
+   token](https://developers.cloudflare.com/r2/api/tokens/) with Object Read &
+   Write permission scoped to that bucket. Add its Access Key ID and Secret
+   Access Key to GitHub Actions as `R2_ACCESS_KEY_ID` and
+   `R2_SECRET_ACCESS_KEY`.
+
+2. Set `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` as GitHub Actions
    secrets. Use an [Edit Cloudflare Workers
    token](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)
-   scoped to the account and the `fondarkivet.se` zone.
-2. Set the repository variable `PUBLISH_NAV` to `true`.
-3. Run **Refresh NAVs** from `main` to deploy immediately. Wrangler attaches
-   `fondarkivet.se` to the Worker as a custom domain.
+   for deployment, scoped to the account and zone.
+
+3. Before setting `PUBLISH_NAV`, seed the bucket from the existing CSV archive.
+   Use the `data` branch if it exists, or a local copy of the archive otherwise.
+   With `CLOUDFLARE_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, and `R2_SECRET_ACCESS_KEY`
+   available in the local environment, run:
+
+   ```sh
+   uv run --locked fondarkivet-r2 import archive
+   uv run --locked fondarkivet-r2 verify archive
+   ```
+
+4. Set the repository variable `PUBLISH_NAV` to `true` after the new workflows
+   are on `main`. Run **Deploy Worker** to attach the custom domain. Run
+   **Refresh NAVs** manually to check the first collection and compare the
+   public catalog, latest snapshot, and sample histories with the seed and
+   current observations.
+
+**Refresh NAVs** runs at 03:17 UTC each night. It updates the affected share
+classes and years in R2. It also prunes unreferenced objects weekly. **Deploy
+Worker** runs when the Worker or its deployment configuration changes.

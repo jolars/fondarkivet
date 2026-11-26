@@ -8,10 +8,10 @@
   `wrangler.jsonc` configures the Cloudflare Workers deployment.
 - `archive/` holds one CSV per share-class ISIN. `site/` holds the generated
   site, including `v1/funds.json` and `v1/nav/`. Both directories are ignored in
-  the source checkout. The publishing workflow persists observations on the
-  `data` branch.
+  the source checkout. Production keeps NAV history and API snapshots in R2.
 - `.github/workflows/ci.yml` runs quality checks. `.github/workflows/nav.yml`
   collects quotes nightly and publishes them when `PUBLISH_NAV` is enabled.
+  `.github/workflows/deploy.yml` deploys the Worker separately.
 
 ## Build and Check Locally
 
@@ -20,8 +20,8 @@
 - Run `uv run --locked fondarkivet archive site` to fetch live quotes, update
   the local archive, and build the site. Pass fresh directories to keep an
   existing local archive intact during a smoke test.
-- Run `npm ci` to install Wrangler. After generating `site/`, run
-  `npm run preview` to serve it locally or `npm run deploy:check` for a
+- Run `npm ci` to install Wrangler. Run `npm run preview` to serve the Worker
+  with local R2, or `npm run build && npm run deploy:check` for a
   deployment dry run.
 - Run `ruff check` and `ruff format --check` in devenv. CI runs both commands
   through `uv run --locked`. Use `actionlint` for workflow changes and

@@ -4,10 +4,14 @@ version = "0.1.0"
 description = "Collect Swedish fund NAVs and build a static API."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = ["beautifulsoup4>=4.15.0,<5"]
+dependencies = [
+    "beautifulsoup4>=4.15.0,<5",
+    "boto3>=1.40,<2",
+]
 
 [project.scripts]
 fondarkivet = "fondarkivet.cli:main"
+fondarkivet-r2 = "fondarkivet.r2:main"
 
 [project.urls]
 Repository = "https://github.com/jolars/fondarkivet"
