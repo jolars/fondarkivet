@@ -18,10 +18,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
         with:
-          python-version: '3.13'
-      - run: python -m pip install -r requirements.txt
+          version: '0.13.7'
+      - run: uv python install
       - name: Load archive
         if: vars.PUBLISH_NAV == 'true'
         run: |
@@ -32,7 +32,7 @@ jobs:
             git worktree add --detach archive HEAD
             git -C archive switch --orphan data
           fi
-      - run: python collect.py archive site
+      - run: uv run --locked --no-dev fondarkivet archive site
       - name: Persist observations
         if: vars.PUBLISH_NAV == 'true'
         run: |

@@ -1,14 +1,15 @@
-# Swedish fund NAVs
+# Fondarkivet
 
-swefunds records the latest published NAV from Spiltan Fonder, AMF Fonder, and
-Handelsbanken Fonder. Each nightly run records one quote per configured share
-class, using the fund's valuation date. The archive starts with the first
+Fondarkivet records the latest published NAV from Spiltan Fonder, AMF Fonder,
+and Handelsbanken Fonder. Each nightly run records one quote per configured
+share class, using the fund's valuation date. The archive starts with the first
 successful collection. A missed refresh can leave a gap if a fund manager
 replaces a quote before the next successful run.
 
 ## API
 
-The GitHub Pages site serves these files without an API key.
+When publishing is enabled, the GitHub Pages site serves these files without an
+API key.
 
   | Path                 | Contents                                                                        |
   | -------------------- | ------------------------------------------------------------------------------- |
@@ -26,13 +27,14 @@ list](https://www.handelsbanken.se/sv/om-oss/svenska-dotterbolag/handelsbanken-f
 
 ## Run locally
 
+With [uv](https://docs.astral.sh/uv/) installed, run:
+
 ```sh
-python -m pip install -r requirements.txt
-python collect.py archive site
+uv run --locked fondarkivet archive site
 ```
 
 The collector keeps observations in `archive` and generates the API files in
-`site`.
+`site`. Run `uv build` to create a wheel and source distribution in `dist/`.
 
 On GitHub, run **Refresh NAVs** manually to check collection from a hosted
 runner. The workflow runs nightly at 03:17 UTC. To enable archiving and

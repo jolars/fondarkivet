@@ -2,9 +2,8 @@
 
 ## Project Structure
 
-- `collect.py` fetches NAV quotes from Spiltan, AMF, and Handelsbanken,
-  normalizes them, and builds the public API files. Runtime dependencies are
-  pinned in `requirements.txt`.
+- `src/fondarkivet/` contains the collector, provider adapters, and static API
+  builder. `pyproject.toml` declares dependencies, and `uv.lock` pins them.
 - `archive/` holds one CSV per share-class ISIN. `site/` holds the generated
   GitHub Pages site, including `v1/funds.json` and `v1/nav/`. Both directories
   are ignored in the source checkout. The publishing workflow persists
@@ -14,15 +13,14 @@
 
 ## Build and Check Locally
 
-- Run `devenv shell` for Python 3.13 and the project tools. Install collector
-  dependencies with `python -m pip install -r requirements.txt` in an active
-  virtual environment.
-- Run `python collect.py archive site` to fetch live quotes, update the local
-  archive, and build the site. Pass fresh directories to keep an existing local
-  archive intact during a smoke test.
-- Run `ruff check` and `ruff format --check` to match Python CI checks. Use
-  `actionlint` for workflow changes and `panache format --check README.md` to
-  check Markdown formatting.
+- Run `devenv shell` for Python 3.13 and the project tools. Run
+  `uv sync --locked` to install the project and its development dependencies.
+- Run `uv run --locked fondarkivet archive site` to fetch live quotes, update
+  the local archive, and build the site. Pass fresh directories to keep an
+  existing local archive intact during a smoke test.
+- Run `ruff check` and `ruff format --check` in devenv. CI runs both commands
+  through `uv run --locked`. Use `actionlint` for workflow changes and
+  `panache format --check README.md` to check Markdown formatting.
 
 ## Coding Style
 
@@ -33,11 +31,12 @@ CSV columns when changing collection logic.
 
 ## Verification
 
-The repository has no automated test suite or coverage threshold. For collector
-changes, inspect the generated catalog and CSVs. Verify that share classes are
-keyed by ISIN, historical rows are sorted by valuation date, and the latest CSV
-contains one row per share class. Check that rebuilding against the same archive
-does not duplicate an observation for the same ISIN and date.
+Run `uv run --locked python -m unittest discover -s tests` for offline CLI
+tests. For collector changes, inspect the generated catalog and CSVs. Verify
+that share classes are keyed by ISIN, historical rows are sorted by valuation
+date, and the latest CSV contains one row per share class. Check that rebuilding
+against the same archive does not duplicate an observation for the same ISIN and
+date.
 
 ## Commits and Pull Requests
 
