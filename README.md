@@ -35,6 +35,20 @@ use a decimal point. Each row links to its source.
   and [IKC
   Avkastningsfond](https://www.nordnet.se/fonder/lista/ikc-avkastningsfond-sek-43ad6174).
 
+## Tracked share classes
+
+Edit the [fund registry](src/fondarkivet/fund_registry.json) to add, rename, or
+stop collecting a share class. Use its ISIN as the key, set `name` to the name
+you want in the public catalog, and set `provider` to the source of the NAV. For
+example, IKC Avkastningsfond uses `nordnet` because Nordnet supplies its quote.
+
+- `handelsbanken` requires `security_id` and the expected `share_class`.
+- `nordnet` and `spiltan` require the fund page's `slug`.
+- `plus` requires the fund page's `slug` and numeric `page_id`.
+
+The other providers look up funds by ISIN. Removing an entry stops collecting
+new quotes for that share class and keeps its archived NAVs available.
+
 ## Run locally
 
 With [uv](https://docs.astral.sh/uv/) installed, run:

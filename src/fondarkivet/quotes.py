@@ -1,9 +1,11 @@
 """Validate and normalize fund quotes from providers."""
 
+import re
 from datetime import date, datetime
 from decimal import Decimal
 from zoneinfo import ZoneInfo
 
+ISIN = re.compile(r"[A-Z]{2}[A-Z0-9]{9}[0-9]")
 SWEDISH_PRICE = r"[0-9]+(?:\s+[0-9]{3})*(?:,[0-9]+)?"
 
 type Quote = tuple[str, dict[str, str]]

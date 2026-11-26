@@ -1,15 +1,15 @@
 """Read AMF NAVs from the fund detail pages."""
 
+from ..funds import Fund
 from ..quotes import Quote
 from .fondlista import fetch_quote
 
-FUNDS = ("SE0001184961", "SE0000739187", "SE0001185000")
 
-
-def fetch_quotes() -> dict[str, Quote]:
+def fetch_quotes(funds: list[Fund]) -> dict[str, Quote]:
     return {
-        isin: fetch_quote(
-            isin, f"https://amf.fondlista.se/details/{isin}/7?parentHost=www.amf.se"
+        fund.isin: fetch_quote(
+            fund,
+            f"https://amf.fondlista.se/details/{fund.isin}/7?parentHost=www.amf.se",
         )
-        for isin in FUNDS
+        for fund in funds
     }

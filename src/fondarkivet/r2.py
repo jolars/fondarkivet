@@ -4,7 +4,6 @@ import csv
 import json
 import logging
 import os
-import re
 from argparse import ArgumentParser
 from collections.abc import Callable, Iterable, Sequence
 from concurrent.futures import ThreadPoolExecutor
@@ -22,11 +21,11 @@ from botocore.exceptions import ClientError
 
 from .collector import fetch_quotes
 from .output import FIELDS
+from .quotes import ISIN
 
 ACTIVE = "active.json"
 OBJECTS = "objects/"
 PARALLELISM = 16
-ISIN = re.compile(r"[A-Z]{2}[A-Z0-9]{9}[0-9]")
 LOG = logging.getLogger(__name__)
 type Rows = dict[str, dict[str, str]]
 type Batch = tuple[str, dict[str, str], Rows]

@@ -1,0 +1,144 @@
+{
+  "SE0000739187": {
+    "name": "AMF Räntefond Lång",
+    "provider": "amf"
+  },
+  "SE0001184961": {
+    "name": "AMF Räntefond Kort",
+    "provider": "amf"
+  },
+  "SE0001185000": {
+    "name": "AMF Aktiefond Småbolag",
+    "provider": "amf"
+  },
+  "SE0000624421": {
+    "name": "Handelsbanken Europa Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F0GBR04F5Z",
+    "share_class": "A1 SEK"
+  },
+  "SE0010127894": {
+    "name": "Handelsbanken Norden Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000ZFRG",
+    "share_class": "A1 SEK"
+  },
+  "SE0010323675": {
+    "name": "Handelsbanken Global Småbolag Index Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F00000ZQ99",
+    "share_class": "A1 SEK"
+  },
+  "SE0013460920": {
+    "name": "Handelsbanken Global Högutdelande Criteria (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000014X0D",
+    "share_class": "A1 SEK"
+  },
+  "SE0015382114": {
+    "name": "Handelsbanken Global Momentum (A1 SEK)",
+    "provider": "handelsbanken",
+    "security_id": "F000016JFT",
+    "share_class": "A1 SEK"
+  },
+  "SE0000837296": {
+    "name": "Länsförsäkringar Japan Index",
+    "provider": "lansforsakringar"
+  },
+  "SE0000837338": {
+    "name": "Länsförsäkringar Fastighetsfond A",
+    "provider": "lansforsakringar"
+  },
+  "SE0002656611": {
+    "name": "Länsförsäkringar Sverige Index",
+    "provider": "lansforsakringar"
+  },
+  "SE0002793943": {
+    "name": "Länsförsäkringar USA Index",
+    "provider": "lansforsakringar"
+  },
+  "SE0005188836": {
+    "name": "Länsförsäkringar Global Index",
+    "provider": "lansforsakringar"
+  },
+  "SE0005796331": {
+    "name": "Länsförsäkringar Tillväxtmarknad Index A",
+    "provider": "lansforsakringar"
+  },
+  "SE0002756973": {
+    "name": "Nordnet Sverige Index",
+    "provider": "nordnet",
+    "slug": "nordnet-sverige-index-sek-aa7a9014"
+  },
+  "SE0004544823": {
+    "name": "IKC Avkastningsfond",
+    "provider": "nordnet",
+    "slug": "ikc-avkastningsfond-sek-43ad6174"
+  },
+  "SE0010323634": {
+    "name": "PLUS Mikrobolag Sverige Index",
+    "provider": "plus",
+    "slug": "plus-mikrobolag",
+    "page_id": 244022
+  },
+  "SE0010323642": {
+    "name": "PLUS Småbolag Sverige Index",
+    "provider": "plus",
+    "slug": "plus-smabolag",
+    "page_id": 244301
+  },
+  "SE0014991535": {
+    "name": "PLUS Allabolag Sverige Index",
+    "provider": "plus",
+    "slug": "plus-allabolag-sverige",
+    "page_id": 278591
+  },
+  "SE0016798805": {
+    "name": "PLUS Fastigheter Sverige Index",
+    "provider": "plus",
+    "slug": "plus-fastigheter-sverige",
+    "page_id": 284759
+  },
+  "SE0016828792": {
+    "name": "PLUS Teknologi Sverige Index",
+    "provider": "plus",
+    "slug": "plus-teknologi-sverige",
+    "page_id": 284761
+  },
+  "SE0002152140": {
+    "name": "Spiltan Räntefond Sverige",
+    "provider": "spiltan",
+    "slug": "spiltan-rantefond-sverige"
+  },
+  "SE0004297927": {
+    "name": "Spiltan Aktiefond Investmentbolag",
+    "provider": "spiltan",
+    "slug": "spiltan-aktiefond-investmentbolag"
+  },
+  "SE0005798329": {
+    "name": "Spiltan Högräntefond",
+    "provider": "spiltan",
+    "slug": "spiltan-hograntefond"
+  },
+  "SE0008613939": {
+    "name": "Spiltan Globalfond Investmentbolag",
+    "provider": "spiltan",
+    "slug": "spiltan-globalfond-investmentbolag"
+  },
+  "SE0004807097": {
+    "name": "Storebrand FRN Företagsobligation A SEK H",
+    "provider": "storebrand"
+  },
+  "SE0000709123": {
+    "name": "Swedbank Robur Ny Teknik A",
+    "provider": "swedbank_robur"
+  },
+  "SE0000987224": {
+    "name": "Swedbank Robur Realränta A",
+    "provider": "swedbank_robur"
+  },
+  "SE0007074117": {
+    "name": "Swedbank Robur Access Asien A",
+    "provider": "swedbank_robur"
+  }
+}

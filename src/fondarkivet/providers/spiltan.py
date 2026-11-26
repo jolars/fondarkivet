@@ -6,23 +6,19 @@ from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
+from ..funds import Fund
 from ..quotes import SWEDISH_PRICE, Quote, make_quote, swedish_decimal
 
 SOURCE = "https://www.spiltanfonder.se"
 LIST_URL = SOURCE + "/fonder"
-FUNDS = {
-    "SE0004297927": "spiltan-aktiefond-investmentbolag",
-    "SE0008613939": "spiltan-globalfond-investmentbolag",
-    "SE0005798329": "spiltan-hograntefond",
-    "SE0002152140": "spiltan-rantefond-sverige",
-}
 
 
-def _parse_quotes(html: bytes) -> dict[str, Quote]:
+def _parse_quotes(html: bytes, funds: list[Fund]) -> dict[str, Quote]:
     soup = BeautifulSoup(html, "html.parser")
     quotes = {}
-    for isin, slug in FUNDS.items():
-        path = f"/fonder/{slug}"
+    for fund in funds:
+        isin = fund.isin
+        path = f"/fonder/{fund.slug}"
         links = soup.select(f'expandable-content a[href="{path}"]')
         cards = {
             id(link.find_parent("expandable-content")): link.find_parent(
@@ -45,12 +41,9 @@ def _parse_quotes(html: bytes) -> dict[str, Quote]:
         match = re.fullmatch(rf"({SWEDISH_PRICE})\s+kr", price)
         if not match:
             raise ValueError(f"Invalid SEK price for {isin}: {price!r}")
-        name = card.select_one(".fund-table-name")
-        if name is None:
-            raise ValueError(f"Missing fund name for {isin}")
         quotes[isin] = make_quote(
             isin,
-            name.get_text(" ", strip=True),
+            fund.name,
             date.fromisoformat(dates[0]["datetime"]),
             swedish_decimal(match[1]),
             "SEK",
@@ -59,6 +52,6 @@ def _parse_quotes(html: bytes) -> dict[str, Quote]:
     return quotes
 
 
-def fetch_quotes() -> dict[str, Quote]:
+def fetch_quotes(funds: list[Fund]) -> dict[str, Quote]:
     with urlopen(LIST_URL, timeout=30) as response:
-        return _parse_quotes(response.read())
+        return _parse_quotes(response.read(), funds)

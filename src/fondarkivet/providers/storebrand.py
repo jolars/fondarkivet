@@ -1,13 +1,14 @@
 """Read Storebrand NAVs from the fund detail pages."""
 
+from ..funds import Fund
 from ..quotes import Quote
 from .fondlista import fetch_quote
 
-FUNDS = ("SE0004807097",)
 
-
-def fetch_quotes() -> dict[str, Quote]:
+def fetch_quotes(funds: list[Fund]) -> dict[str, Quote]:
     return {
-        isin: fetch_quote(isin, f"https://storebrand.fondlista.se/details/{isin}/1")
-        for isin in FUNDS
+        fund.isin: fetch_quote(
+            fund, f"https://storebrand.fondlista.se/details/{fund.isin}/1"
+        )
+        for fund in funds
     }
