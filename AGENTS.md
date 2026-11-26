@@ -1,5 +1,10 @@
 # Repository Guidelines
 
+## Fund Coverage
+
+Fondarkivet serves investors in Sweden. Add only fund share classes with NAVs
+published in Swedish kronor (SEK). Keep ETFs out of the fund registry.
+
 ## Project Structure
 
 - `src/fondarkivet/` contains the collector, provider adapters, and static API

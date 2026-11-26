@@ -1,9 +1,10 @@
 # Fondarkivet <img src="https://raw.githubusercontent.com/jolars/fondarkivet/refs/heads/main/src/fondarkivet/web/logo.png" align="right" width="96" alt="A green archive box with a line chart" />
 
-Fondarkivet records the latest published NAVs for selected Swedish funds. Each
-nightly run records one quote per configured share class, using the fund's
-valuation date. The archive starts with the first successful collection. A
-missed refresh can leave a gap if a fund manager replaces a quote before the
+Fondarkivet serves investors in Sweden and tracks selected fund share classes
+whose NAVs are published in Swedish kronor (SEK). ETFs are outside the archive's
+scope. Each nightly run records one quote per configured share class, using the
+fund's valuation date. The archive starts with the first successful collection.
+A missed refresh can leave a gap if a fund manager replaces a quote before the
 next successful run.
 
 ## API
