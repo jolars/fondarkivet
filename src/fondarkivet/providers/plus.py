@@ -3,11 +3,11 @@
 import json
 from datetime import datetime
 from decimal import Decimal
-from urllib.request import urlopen
 from zoneinfo import ZoneInfo
 
 from ..funds import Fund
 from ..quotes import Quote, make_quote
+from .http import open_url
 
 SOURCE = "https://www.plusfonder.se"
 
@@ -15,7 +15,7 @@ SOURCE = "https://www.plusfonder.se"
 def _fetch_quote(fund: Fund) -> Quote:
     # The chart endpoint identifies each SEK share class by its fund page ID.
     url = f"{SOURCE}/tools/GetCoursesChartData?pageId={fund.page_id}"
-    with urlopen(url, timeout=30) as response:
+    with open_url(url, timeout=30) as response:
         points = json.load(response, parse_float=Decimal)
     if not points:
         raise ValueError(f"Missing PLUSfonder NAVs for {fund.isin}")

@@ -2,12 +2,12 @@
 
 import re
 from datetime import date
-from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
 from ..funds import Fund
 from ..quotes import SWEDISH_PRICE, Quote, make_quote, swedish_decimal
+from .http import open_url
 
 SOURCE = "https://www.spiltanfonder.se"
 LIST_URL = SOURCE + "/fonder"
@@ -53,5 +53,5 @@ def _parse_quotes(html: bytes, funds: list[Fund]) -> dict[str, Quote]:
 
 
 def fetch_quotes(funds: list[Fund]) -> dict[str, Quote]:
-    with urlopen(LIST_URL, timeout=30) as response:
+    with open_url(LIST_URL, timeout=30) as response:
         return _parse_quotes(response.read(), funds)

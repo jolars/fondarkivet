@@ -3,18 +3,18 @@
 import json
 from datetime import datetime
 from decimal import Decimal
-from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
 from ..funds import Fund
 from ..quotes import Quote, make_quote
+from .http import open_url
 
 
 def _fetch_quote(fund: Fund) -> Quote:
     isin = fund.isin
     url = f"https://swedbankrobur.fondlista.se/sv/details/{isin}"
-    with urlopen(url, timeout=30) as response:
+    with open_url(url, timeout=30) as response:
         soup = BeautifulSoup(response.read(), "html.parser")
     for script in soup.select('script[type="application/ld+json"]'):
         details = json.loads(script.string, parse_float=Decimal)

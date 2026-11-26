@@ -32,7 +32,7 @@ class ProviderTest(unittest.TestCase):
         ]}}}}
         </script>
         """
-        with patch.object(fondlista, "urlopen", return_value=BytesIO(html)):
+        with patch.object(fondlista, "open_url", return_value=BytesIO(html)):
             name, quote = fondlista.fetch_quote(fund, url)
 
         self.assertEqual(name, fund.name)
@@ -60,7 +60,7 @@ class ProviderTest(unittest.TestCase):
         """
         with patch.object(
             lansforsakringar,
-            "urlopen",
+            "open_url",
             side_effect=lambda *a, **kw: BytesIO(html.encode()),
         ):
             _, quote = lansforsakringar._fetch_quote(fund)
@@ -81,7 +81,7 @@ class ProviderTest(unittest.TestCase):
            "dateCreated":"2002-11-25T00:00:00"}
         </script>
         """
-        with patch.object(swedbank_robur, "urlopen", return_value=BytesIO(html)):
+        with patch.object(swedbank_robur, "open_url", return_value=BytesIO(html)):
             _, quote = swedbank_robur._fetch_quote(fund)
 
         self.assertEqual(quote["date"], "2026-01-02")
@@ -102,7 +102,7 @@ class ProviderTest(unittest.TestCase):
             registry.write_text(json.dumps({isin: entry}), encoding="utf-8")
             with (
                 patch.object(collector, "REGISTRY", registry),
-                patch.object(plus, "urlopen", return_value=BytesIO(data)) as urlopen,
+                patch.object(plus, "open_url", return_value=BytesIO(data)) as urlopen,
             ):
                 quotes = collector.fetch_quotes()
 
@@ -129,7 +129,7 @@ class ProviderTest(unittest.TestCase):
             registry = Path(directory) / "fund_registry.json"
             with (
                 patch.object(collector, "REGISTRY", registry),
-                patch.object(plus, "urlopen") as urlopen,
+                patch.object(plus, "open_url") as urlopen,
             ):
                 for message, invalid in invalid_entries.items():
                     with self.subTest(message=message):
@@ -163,7 +163,7 @@ class ProviderTest(unittest.TestCase):
         encoded = json.dumps(json.dumps(data))
         html = f"<script>window.__initialProps__={encoded};window.other=1;</script>"
         with patch.object(
-            nordnet, "urlopen", side_effect=lambda *a, **kw: BytesIO(html.encode())
+            nordnet, "open_url", side_effect=lambda *a, **kw: BytesIO(html.encode())
         ):
             _, quote = nordnet._fetch_quote(fund)
             with self.assertRaises(ValueError):

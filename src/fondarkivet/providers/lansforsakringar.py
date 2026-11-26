@@ -2,18 +2,18 @@
 
 import re
 from datetime import date
-from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
 from ..funds import Fund
 from ..quotes import SWEDISH_PRICE, Quote, make_quote, swedish_decimal
+from .http import open_url
 
 
 def _fetch_quote(fund: Fund) -> Quote:
     isin = fund.isin
     url = f"https://lf.fondlista.se/sv/1/details/{isin}"
-    with urlopen(url, timeout=30) as response:
+    with open_url(url, timeout=30) as response:
         soup = BeautifulSoup(response.read(), "html.parser")
     fields = {
         label.get_text(" ", strip=True): value.get_text(" ", strip=True)

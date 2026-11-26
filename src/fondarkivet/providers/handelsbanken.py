@@ -2,12 +2,12 @@
 
 import json
 import re
-import time
 from datetime import date
-from urllib.request import Request, urlopen
+from urllib.request import Request
 
 from ..funds import Fund
 from ..quotes import SWEDISH_PRICE, Quote, make_quote, swedish_decimal
+from .http import open_url
 
 SOURCE = "https://handelsbanken.fondlista.se"
 
@@ -20,7 +20,7 @@ def _fetch_quote(fund: Fund) -> Quote:
         f"?secId={fund.security_id}&webId=2"
     )
     request = Request(url, headers={"X-Domain": SOURCE, "Accept-Language": "sv"})
-    with urlopen(request, timeout=30) as response:
+    with open_url(request, timeout=30) as response:
         sections = json.load(response)
     fields = {
         field["id"]: field["value"]
@@ -51,9 +51,4 @@ def _fetch_quote(fund: Fund) -> Quote:
 
 
 def fetch_quotes(funds: list[Fund]) -> dict[str, Quote]:
-    quotes = {}
-    for index, fund in enumerate(funds):
-        if index:
-            time.sleep(1)
-        quotes[fund.isin] = _fetch_quote(fund)
-    return quotes
+    return {fund.isin: _fetch_quote(fund) for fund in funds}
