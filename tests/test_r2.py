@@ -157,6 +157,23 @@ class R2ArchiveTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "observations differ"):
                 verify(self.store, archive)
 
+    def test_collection_backfills_names_and_csv_import_preserves_them(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory)
+            observation = row(ISIN, "2025-01-01")
+            (archive / f"{ISIN}.csv").write_bytes(csv_bytes([observation]))
+            publish(self.store, lambda: import_batches(archive))
+            seeded = self.entry()
+            self.assertEqual(seeded["fund"]["name"], ISIN)
+
+            self.publish((ISIN, observation))
+            named = self.entry()
+            self.assertEqual(named["fund"], FUND)
+            self.assertEqual(named["history"], seeded["history"])
+
+            publish(self.store, lambda: import_batches(archive))
+            self.assertEqual(self.entry(), named)
+
     def test_prune_keeps_both_releases_and_recent_orphans(self):
         self.store.now -= timedelta(days=10)
         self.publish((ISIN, row(ISIN, "1980-01-02")))

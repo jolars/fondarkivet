@@ -154,6 +154,8 @@ class Release:
         isin, fund, rows = batch
         validate(isin, rows)
         existing = self.shards.get(isin[-2:], {}).get(isin)
+        if existing and fund["name"] == isin:
+            fund = fund | {"name": existing["fund"]["name"]}
         chunks = json.loads(self.store.require(existing["history"])) if existing else {}
         latest = existing["latest"] if existing else rows[min(rows)]
         changed = False
