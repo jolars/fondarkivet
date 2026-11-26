@@ -46,8 +46,8 @@ On GitHub, run **Refresh NAVs** manually to check collection from a hosted
 runner. The workflow runs nightly at 03:17 UTC. To publish from `main`, set up
 `fondarkivet.se` as an active zone in Cloudflare, then configure GitHub Actions.
 
-1. Set `CLOUDFLARE_ACCOUNT_ID` as a variable and `CLOUDFLARE_API_TOKEN` as a
-   secret. Use an [Edit Cloudflare Workers
+1. Add `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` as GitHub Actions
+   secrets. Use an [Edit Cloudflare Workers
    token](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)
    scoped to the account and the `fondarkivet.se` zone.
 2. Set the repository variable `PUBLISH_NAV` to `true`.
