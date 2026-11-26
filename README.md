@@ -1,10 +1,10 @@
 # Fondarkivet <img src="https://raw.githubusercontent.com/jolars/fondarkivet/refs/heads/main/src/fondarkivet/web/logo.png" align="right" width="96" alt="A green archive box with a line chart" />
 
-Fondarkivet records the latest published NAV from Spiltan Fonder, AMF Fonder,
-and Handelsbanken Fonder. Each nightly run records one quote per configured
-share class, using the fund's valuation date. The archive starts with the first
-successful collection. A missed refresh can leave a gap if a fund manager
-replaces a quote before the next successful run.
+Fondarkivet records the latest published NAVs for selected Swedish funds. Each
+nightly run records one quote per configured share class, using the fund's
+valuation date. The archive starts with the first successful collection. A
+missed refresh can leave a gap if a fund manager replaces a quote before the
+next successful run.
 
 ## API
 
@@ -18,12 +18,22 @@ without an API key.
   | `/v1/nav/{isin}.csv` | Archived NAVs for one share class, sorted by valuation date                     |
 
 CSV columns are `isin,date,nav,currency,source_url`. Dates use ISO 8601 and NAVs
-use a decimal point. Each row links to its source. The collector reads the
-[Spiltan fund list](https://www.spiltanfonder.se/fonder), the fund details
-linked from [AMF's fund
-list](https://www.amf.se/spara-hos-amf/fonder/fondutbud/), and the quick views
-in [Handelsbanken Fonder's own fund
-list](https://www.handelsbanken.se/sv/om-oss/svenska-dotterbolag/handelsbanken-fonder/fondlista-komplett).
+use a decimal point. Each row links to its source.
+
+## NAV sources
+
+- [AMF Fonder](https://www.amf.se/spara-hos-amf/fonder/fondutbud/)
+- [Handelsbanken
+  Fonder](https://www.handelsbanken.se/sv/om-oss/svenska-dotterbolag/handelsbanken-fonder/fondlista-komplett)
+- [Länsförsäkringar](https://lf.fondlista.se/sv/1)
+- [PLUSfonder](https://www.plusfonder.se/)
+- [Spiltan Fonder](https://www.spiltanfonder.se/fonder)
+- [Storebrand](https://storebrand.fondlista.se/)
+- [Swedbank Robur](https://swedbankrobur.fondlista.se/sv)
+- Nordnet publishes quotes for [Nordnet Sverige
+  Index](https://www.nordnet.se/fonder/lista/nordnet-sverige-index-sek-aa7a9014)
+  and [IKC
+  Avkastningsfond](https://www.nordnet.se/fonder/lista/ikc-avkastningsfond-sek-43ad6174).
 
 ## Run locally
 
