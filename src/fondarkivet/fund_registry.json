@@ -583,10 +583,60 @@
     "name": "Länsförsäkringar Tillväxtmarknad Index A",
     "provider": "lansforsakringar"
   },
+  "IE000P8IJ918": {
+    "name": "Nordnet Global Index 125",
+    "provider": "nordnet",
+    "slug": "nordnet-global-index-125-sek-d8da4522"
+  },
+  "IE00BMTD2G30": {
+    "name": "Nordnet Global Index",
+    "provider": "nordnet",
+    "slug": "nordnet-global-index-sek-0c65c468"
+  },
+  "IE00BMTD2L82": {
+    "name": "Nordnet Europa Index",
+    "provider": "nordnet",
+    "slug": "nordnet-europa-index-sek-462687cf"
+  },
+  "IE00BMTD2Q38": {
+    "name": "Nordnet Tillväxtmarknad Index",
+    "provider": "nordnet",
+    "slug": "nordnet-tillvaxtmarknad-index-sek-c46a0245"
+  },
+  "IE00BMTD2V80": {
+    "name": "Nordnet USA Index",
+    "provider": "nordnet",
+    "slug": "nordnet-usa-index-sek-9686c016"
+  },
+  "IE00BNNLSK63": {
+    "name": "Nordnet Teknologi Index",
+    "provider": "nordnet",
+    "slug": "nordnet-teknologi-index-sek-f03a3fa8"
+  },
   "SE0002756973": {
     "name": "Nordnet Sverige Index",
     "provider": "nordnet",
     "slug": "nordnet-sverige-index-sek-aa7a9014"
+  },
+  "SE0017831977": {
+    "name": "Nordnet One Balanserad SEK",
+    "provider": "nordnet",
+    "slug": "nordnet-one-balanserad-sek-d41d4ef9"
+  },
+  "SE0017832033": {
+    "name": "Nordnet One Försiktig SEK",
+    "provider": "nordnet",
+    "slug": "nordnet-one-forsiktig-sek-c36e13d8"
+  },
+  "SE0017832413": {
+    "name": "Nordnet One Offensiv SEK",
+    "provider": "nordnet",
+    "slug": "nordnet-one-offensiv-sek-7924e467"
+  },
+  "SE0024245476": {
+    "name": "Nordnet Småbolag Sverige Index A",
+    "provider": "nordnet",
+    "slug": "nordnet-smabolag-sverige-index-sek-31a4f521"
   },
   "SE0004544823": {
     "name": "IKC Avkastningsfond",
