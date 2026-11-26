@@ -3,10 +3,12 @@
 import csv
 import json
 from pathlib import Path
+from shutil import copyfile
 
 from .quotes import Quote
 
 FIELDS = ("isin", "date", "nav", "currency", "source_url")
+WEB = Path(__file__).with_name("web")
 
 
 def _write_csv(path: Path, rows: list[dict[str, str]]) -> None:
@@ -47,9 +49,5 @@ def build(quotes: dict[str, Quote], archive: Path, site: Path) -> None:
     (output.parent / "funds.json").write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    (site / "index.html").write_text(
-        '<!doctype html><meta charset="utf-8"><title>Fondarkivet</title>'
-        '<h1>Fondarkivet</h1><ul><li><a href="v1/funds.json">Fund catalog</a></li>'
-        '<li><a href="v1/nav/latest.csv">Latest NAVs</a></li></ul>\n',
-        encoding="utf-8",
-    )
+    for name in ("index.html", "_headers"):
+        copyfile(WEB / name, site / name)

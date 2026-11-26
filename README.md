@@ -8,8 +8,8 @@ replaces a quote before the next successful run.
 
 ## API
 
-When publishing is enabled, the GitHub Pages site serves these files without an
-API key.
+The public API at [fondarkivet.se](https://fondarkivet.se/) serves these files
+without an API key.
 
   | Path                 | Contents                                                                        |
   | -------------------- | ------------------------------------------------------------------------------- |
@@ -33,10 +33,23 @@ With [uv](https://docs.astral.sh/uv/) installed, run:
 uv run --locked fondarkivet archive site
 ```
 
-The collector keeps observations in `archive` and generates the API files in
+The collector keeps observations in `archive` and generates the website in
 `site`. Run `uv build` to create a wheel and source distribution in `dist/`.
 
+With Node.js 24, install Wrangler with `npm ci` and run `npm run preview` to
+serve the generated site locally. Run `npm run deploy:check` to validate the
+deployment without publishing.
+
+## Publish
+
 On GitHub, run **Refresh NAVs** manually to check collection from a hosted
-runner. The workflow runs nightly at 03:17 UTC. To enable archiving and
-deployment, select GitHub Actions as the Pages source and set the repository
-variable `PUBLISH_NAV` to `true`.
+runner. The workflow runs nightly at 03:17 UTC. To publish from `main`, set up
+`fondarkivet.se` as an active zone in Cloudflare, then configure GitHub Actions.
+
+1. Set `CLOUDFLARE_ACCOUNT_ID` as a variable and `CLOUDFLARE_API_TOKEN` as a
+   secret. Use an [Edit Cloudflare Workers
+   token](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)
+   scoped to the account and the `fondarkivet.se` zone.
+2. Set the repository variable `PUBLISH_NAV` to `true`.
+3. Run **Refresh NAVs** from `main` to deploy immediately. Wrangler attaches
+   `fondarkivet.se` to the Worker as a custom domain.

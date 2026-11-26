@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A public archive of net asset values for Swedish funds.">
+    <title>Fondarkivet</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --background: #f8faf9;
+        --text: #182e26;
+        --muted: #465c52;
+        --border: #cbd9d2;
+        --accent: #176244;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #14211c;
+          --text: #edf4ef;
+          --muted: #b4c9bd;
+          --border: #40574c;
+          --accent: #9ae2b7;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font: 1rem/1.6 system-ui, sans-serif;
+      }
+      main, footer {
+        width: min(40rem, calc(100% - 3rem));
+        margin-inline: auto;
+      }
+      main { padding-block-start: clamp(2.5rem, 10vw, 6rem); }
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 9vw, 4rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+      }
+      p, dd { color: var(--muted); }
+      section { margin-block-start: 2.5rem; }
+      h2 { margin: 0; font-size: 1.375rem; }
+      dl { margin-block: 1rem 0; }
+      dl div {
+        border-block-start: 1px solid var(--border);
+        padding-block: 0.875rem;
+      }
+      dt { font-weight: 650; }
+      dd { margin: 0; }
+      code { overflow-wrap: anywhere; }
+      a { color: var(--accent); text-underline-offset: 0.2em; }
+      footer {
+        border-block-start: 1px solid var(--border);
+        margin-block: 1.25rem 2.5rem;
+        padding-block-start: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Fondarkivet</h1>
+      <p>
+        A public archive of net asset values (NAVs) from Spiltan Fonder,
+        AMF Fonder, and Handelsbanken Fonder. The archive refreshes nightly
+        and records quotes by valuation date.
+      </p>
+
+      <section aria-labelledby="api">
+        <h2 id="api">API</h2>
+        <p>Download the data without an API key.</p>
+        <dl>
+          <div>
+            <dt><a href="v1/funds.json">Fund catalog (JSON)</a></dt>
+            <dd>Fund names, share-class ISINs, currencies, and latest quote dates.</dd>
+          </div>
+          <div>
+            <dt><a href="v1/nav/latest.csv">Latest NAVs (CSV)</a></dt>
+            <dd>One row per archived share class.</dd>
+          </div>
+          <div>
+            <dt>NAV history (CSV)</dt>
+            <dd>Find a share class in the catalog and use its ISIN in <code>/v1/nav/{isin}.csv</code>.</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/jolars/fondarkivet">Source on GitHub</a>
+    </footer>
+  </body>
+</html>
